@@ -4,10 +4,11 @@ Send your self-defined HTTP request to somewhere,and you do not care anything el
 ### How to install ? 
 
 ```shell
+
 composer require assasin/curl-request
 ```
 
-```
+```shell
 {
     "require": {
         "assasin/curl-request": "^1.0"
@@ -25,7 +26,6 @@ If you want to send a GET,POST,PUT,DELETE Http request,and enble cooke,enable gz
 ### How to use use it ? 
 
 ```php
-// Complex request
 $result = RequestUrl::getInstance()
         ->enableCookie('testCookiefile.tmp')
         ->enableGzip(true)
@@ -38,7 +38,6 @@ $result = RequestUrl::getInstance()
         ->setProxy('127.0.0.1', 1080)
         ->post('https://www.baidu.com/user/login');
 
-// Simple request
 $result = RequestUrl::getInstance()->setParams(['key' => 'value'])->post('https://www.baidu.com');
 $result = RequestUrl::getInstance()->get('https://www.example.com');
 
