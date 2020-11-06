@@ -1,0 +1,21 @@
+  {
+    "name"  : "assasin/curl-request",
+    "type"  : "library",
+    "description": "Send your self-defined HTTP request to somewhere,and you do not care anything else",
+    "homepage": "https://github.com/assasin0308/curl-request",
+    "keywords": ["Http",  "POST", "GET","PUT","DELETE"],
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Bin Shi",
+            "email": "assasin0308@sina.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"": "./src"}
+    }
+}
